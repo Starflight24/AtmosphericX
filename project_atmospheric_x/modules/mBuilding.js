@@ -73,8 +73,8 @@ class Building {
         
         if (eventName == `Tornado Warning`) {
             eventName = `Radar Indicated Tornado Warning`;
-            if (dmgThreat == `RADAR INDICATED`) eventName = `Radar Indicated Tornado Warning`;
-            if (dmgThreat == `OBSERVED`) eventName = `Confirmed Tornado Warning`;
+            if (torThreat == `RADAR INDICATED`) eventName = `Radar Indicated Tornado Warning`;
+            if (torThreat == `OBSERVED`) eventName = `Confirmed Tornado Warning`;
         }
         if (eventName == `Severe Thunderstorm Warning`) {
             if (dmgThreat == `CONSIDERABLE`) eventName = `Considerable Severe Thunderstorm Warning`;
